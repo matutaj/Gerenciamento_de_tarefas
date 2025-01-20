@@ -7,16 +7,19 @@ function App() {
     {
       id: 1,
       title: "Estudar React",
+      description: "Estudar React para se tornar cada vez melhor",
       isCompleted: false,
     },
     {
       id: 2,
       title: "Estudar Vue",
+      description: "Estudar Vue para se tornar cada vez melhor",
       isCompleted: false,
     },
     {
       id: 3,
       title: "Estudar Angular",
+      description: "Estudar Angular para se tornar cada vez melhor",
       isCompleted: false,
     },
   ]);
