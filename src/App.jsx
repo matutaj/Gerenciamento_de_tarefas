@@ -1,8 +1,8 @@
-import { useState } from "react";
 import AddTasks from "./components/AddTasks";
 import Tasks from "./components/Tasks";
 
 function App() {
+<<<<<<< HEAD
   const [tasks, setTasks] = useState([
     {
       id: 1,
@@ -48,6 +48,13 @@ function App() {
           onDeleteTasksClick={onDeleteTasksClick}
         />
       </div>
+=======
+  return (
+    <div>
+      <h1 className="text-red-500">Gerenciador de Tarefas</h1>
+      <AddTasks />
+      <Tasks />
+>>>>>>> parent of 2cc5acc (feat:  listar as tasks)
     </div>
   );
 }

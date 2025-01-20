@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { ChevronRightIcon, TrashIcon } from "lucide-react";
 
 function Tasks({tasks, onTasksClick, onDeleteTasksClick}) {
@@ -26,5 +27,12 @@ function Tasks({tasks, onTasksClick, onDeleteTasksClick}) {
       ))}
     </ul>
   );
+=======
+
+function Tasks (){
+return (
+    <h1> Tasks</h1>
+)
+>>>>>>> parent of 2cc5acc (feat:  listar as tasks)
 }
 export default Tasks;
