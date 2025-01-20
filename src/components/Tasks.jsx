@@ -1,13 +1,13 @@
-<<<<<<< HEAD
+
 import { ChevronRightIcon, TrashIcon } from "lucide-react";
 
-function Tasks({tasks, onTasksClick, onDeleteTasksClick}) {
+function Tasks(props) {
   return (
     <ul className="space-y-4 p-6 bg-slate-200 rounded-md shadow">
-      {tasks.map((task) => (
+      {props.tasks.map((task) => (
         <li key={task.id} className="flex gap-2 ">
           <button
-            onClick={() => onTasksClick(task.id)}
+            onClick={() => props.onTasksClick(task.id)}
             className={`bg-slate-400 text-left w-full text-white p-2 rounded-md ${
               task.isCompleted && "line-through"
             }`}
@@ -17,22 +17,10 @@ function Tasks({tasks, onTasksClick, onDeleteTasksClick}) {
           <button className="bg-slate-400 p-2 rounded-md text-white">
             <ChevronRightIcon />
           </button>
-          <button
-            onClick={() =>onDeleteTasksClick(task.id)}
-            className="bg-slate-400 p-2 rounded-md text-white"
-          >
-            <TrashIcon />
-          </button>
         </li>
       ))}
     </ul>
   );
-=======
 
-function Tasks (){
-return (
-    <h1> Tasks</h1>
-)
->>>>>>> parent of 2cc5acc (feat:  listar as tasks)
 }
 export default Tasks;
